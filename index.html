@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meeting Minutes</title>
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <h1>Group Introductions / Initial Ideas</h1>
+            <nav>
+                <ul>
+                <li><a href="#today">Agenda</a></li>
+                <li><a href="#yesterday">Last Meeting</a></li>
+                <li><a href="#dby">Next Meeting</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <h2>Attendance</h2>
+            <ul>
+                <li><a>Shreya - Present</a></li>
+                <li><a>Anish - Absent (excused)</a></li>
+                <li><a>PJ - Present</a></li>
+                <li><a>Luke - Present</a></li>
+            </ul>
+            <h2 id="today">Agenda</h2>
+            <details open="open">
+                <section>
+                    <summary><h3>Introductions</h3></summary>
+                    <div>
+                            <h3>October 1st, 2021</h3>
+                            <p><b>Everyone introduced themselves and the group did some icebreakers to get a glimpse into everyone's personality.</b> Shreya is from Sacramento and <strong>loves</strong> doing her makeup. She also enjoys making YouTube videos and eating pickles. <em>Anish wasn't able to attend the meeting</em>, but he is from San Ramon and enjoys playing basketball. He is a Neurobiology major and his favorite anime is Vinland Saga. PJ is a sophomore from New Jersey and also likes playing basketball. He listens to a lot of music in his free time and his favorite artist is Kanye West. Luke is from San Jose and actually went to the <i>same school</i> as one of my friends! He has a similar music taste to me since we both listen to Lil Uzi Vert a lot. Here is one of my favorite songs by him:</p>
+                            <br>
+                            <br>
+                            <audio controls>
+                                <source src="Uzi.mp3">
+                            </audio>
+                    </div>
+                </section>
+            </details>
+            <h2 id="yesterday">Last Meeting</h2>
+            <details open="open">
+                    <summary><h3>Previous Points to Address</h3></summary>
+                    <div>
+                            <h3>September 24th, 2021</h3>
+                            <ul>
+                                <li>come up with a group name</li>
+                                <li>discuss roles of each member</li>
+                                <li>get comfortable with each other</li>
+                            </ul>
+                            <video width="320" controls>
+                                <source src="simon.MOV">
+                            </video>
+                        </div>
+                </details>
+            <h2 id="dby">Next Meeting</h2>
+            <details open="open">
+                    <summary><h3>Additional Points to Address</h3></summary>
+                    <div>
+                            <h3>October 8th, 2021</h3>
+                            <ol>
+                                <li>concrete time for meetings</li>
+                                <li>plan for project</li>
+                                <li>splitting up responsibilities</li>
+                            </ol>
+                            <img src="cse110.png" alt="cse110" width="320">
+                    </div>
+            </details>
+            <h3>Other Topics</h3>
+            <span>None for today</span>
+        </main>
+        <hr>
+        <footer>
+            <h3>Form</h3>
+            <form>
+                <fieldset>
+                    <label for="title">Meeting Title: </label>
+                    <input type="text" id="title" name="title"><br><br>
+                    <a>What part of the meeting?</a><br>
+                    <input type="checkbox" id="attendance"/>
+                    <label for="attendance">Attendance</label><br>
+                    <input type="checkbox" id="agenda"/>
+                    <label for="agenda">Agenda</label><br>
+                    <input type="checkbox" id="last"/>
+                    <label for="last">Last Meeting</label><br>
+                    <input type="checkbox" id="next"/>
+                    <label for="next">Next Meeting</label><br>
+                    <input type="checkbox" id="other"/>
+                    <label for="other">Other Topics</label><br><br>
+                    <a>How many paragraphs?</a><br>
+                    <input type="radio" id="one" name="paras" value="one" />
+                    <label for="one">1</label><br>
+                    <input type="radio" id="two" name="paras" value="two" />
+                    <label for="two">2</label><br>
+                    <input type="radio" id="three" name="paras" value="three" />
+                    <label for="three">3</label><br>
+                    <label for="entry">Type in the meeting entry: </label>
+                    <textarea name="entry" id="entry" cols="30" rows="10"></textarea><br><br>
+                    <label for="entrydate">Please enter the date: </label>
+                    <input type="date" id="entrydate" name="date" /><br><br>
+                    <label>What's your favorite Pokémon starter: </label>
+                    <input list="pokemon">
+                    <datalist id="pokemon">
+                        <option value="Chimchar">
+                        <option value="Piplup">
+                        <option value="Charmander">
+                        <option value="Bulbasaur">
+                        <option value="Squirtle">
+                    </datalist><br>
+                    <label for="ending">Favaorite ice cream flavor: </label>
+                    <select name="ice" id="ice">
+                        <option value="dcc">Double chocolate chip</option>
+                        <option value="cac">Cookies and Cream</option>
+                        <option value="rr">Rocky Road</option>
+                        <option value="mcc">Mint Chocolate Chip</option>
+                    </select><br>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </footer>
+    </body>
+</html>
