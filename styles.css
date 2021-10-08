@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Oswald;
+    src: url(misc/Oswald-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: Oswald;
+  }
+
+h2 {
+    color: rgb(255, 0, 0);
+}
+
+h2.attendance ~ h2{
+    color: #ADD8E6;
+}
+
+#other > span{
+    color: hsl(124, 100%, 50%);
+    padding-left: 2vw;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+}
+
+img {
+    padding-left: 10px;
+    padding: 1cm 0 2pc;
+    height: 200px;
+    width: auto;
+}
+
+video {
+    margin: 10px 5px;
+    margin-bottom: auto;
+    margin-left: 5px;
+}
+
+h3.date {
+    text-decoration: underline;
+}
+
+h3#intros, h3#ppta{
+    border-style: dashed;
+    border-color: pink;
+    border-width: 2px;
+    border-radius: 5px;
+    position: relative;
+}
+
+#form {
+    display: inline;
+}
+
+#flist {
+    display: block;
+}
+
+div#intros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+div#grid-cont {
+    display: grid;
+    grid-column-gap: 50px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+button:hover {
+    color: blue;
+}
+
+button:active {
+    color: red;
+}
+
+li + li {
+    color: blueviolet;
+}
