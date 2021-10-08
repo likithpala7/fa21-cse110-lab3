@@ -4,13 +4,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meeting Minutes</title>
-        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="misc/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /* Adding a background color to the page*/
+            body {
+                background-color: linen;
+            }
+
+            @media only screen and (max-width: 1000px) {
+                body {
+                    background-color: peachpuff;
+                }
+            }
+        </style>
     </head>
     <body>
         <header>
-            <h1>Group Introductions / Initial Ideas</h1>
+            <h1 style="color:blue; text-align:center; position:sticky; position: -webkit-sticky; top: 20px;">Group Introductions / Initial Ideas</h1>
             <nav>
-                <ul>
+                <ul id="flist">
                 <li><a href="#today">Agenda</a></li>
                 <li><a href="#yesterday">Last Meeting</a></li>
                 <li><a href="#dby">Next Meeting</a></li>
@@ -19,62 +32,69 @@
         </header>
         <hr>
         <main>
-            <h2>Attendance</h2>
+            <h2 class="attendance">Attendance</h2>
             <ul>
                 <li><a>Shreya - Present</a></li>
                 <li><a>Anish - Absent (excused)</a></li>
                 <li><a>PJ - Present</a></li>
                 <li><a>Luke - Present</a></li>
             </ul>
-            <h2 id="today">Agenda</h2>
+            <h2 class="meetings" id="today">Agenda</h2>
             <details open="open">
-                <summary><h3>Introductions</h3></summary>
+                <summary><h3 id="intros">Introductions</h3></summary>
                     <section>
-                        <div>
-                                <h3>October 1st, 2021</h3>
+                        <div id="intros">
+                                <h3 class="date">October 1st, 2021</h3>
                                 <p><b>Everyone introduced themselves and the group did some icebreakers to get a glimpse into everyone's personality.</b> Shreya is from Sacramento and <strong>loves</strong> doing her makeup. She also enjoys making YouTube videos and eating pickles. <em>Anish wasn't able to attend the meeting</em>, but he is from San Ramon and enjoys playing basketball. He is a Neurobiology major and his favorite anime is Vinland Saga. PJ is a sophomore from New Jersey and also likes playing basketball. He listens to a lot of music in his free time and his favorite artist is Kanye West. Luke is from San Jose and actually went to the <i>same school</i> as one of my friends! He has a similar music taste to me since we both listen to Lil Uzi Vert a lot. Here is one of my favorite songs by him:</p>
                                 <br>
-                                <br>
                                 <audio controls>
-                                    <source src="Uzi.mp3">
+                                    <source src="misc/Uzi.mp3">
                                 </audio>
                         </div>
                     </section>
             </details>
-            <h2 id="yesterday">Last Meeting</h2>
+            <h2 class="meetings" id="yesterday">Last Meeting</h2>
             <details open="open">
-                    <summary><h3>Previous Points to Address</h3></summary>
+                    <summary><h3 id="ppta">Previous Points to Address</h3></summary>
                     <div>
-                            <h3>September 24th, 2021</h3>
-                            <ul>
-                                <li>come up with a group name</li>
-                                <li>discuss roles of each member</li>
-                                <li>get comfortable with each other</li>
-                            </ul>
-                            <video width="320" controls>
-                                <source src="simon.MOV">
-                            </video>
+                            <div>
+                                <h3 class="date">September 24th, 2021</h3>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>come up with a group name</li>
+                                    <li>discuss roles of each member</li>
+                                    <li>get comfortable with each other</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <video width="320" controls>
+                                    <source src="misc/simon.MOV">
+                                </video>
+                            </div>
                         </div>
                 </details>
-            <h2 id="dby">Next Meeting</h2>
+            <h2 class="meetings" id="dby">Next Meeting</h2>
             <details open="open">
                     <summary><h3>Additional Points to Address</h3></summary>
                     <div>
-                            <h3>October 8th, 2021</h3>
+                            <h3 class="date">October 8th, 2021</h3>
                             <ol>
                                 <li>concrete time for meetings</li>
                                 <li>plan for project</li>
                                 <li>splitting up responsibilities</li>
                             </ol>
-                            <img src="cse110.png" alt="cse110" width="320">
+                            <img src="misc/cse110.png" alt="cse110" width="320">
                     </div>
             </details>
-            <h3>Other Topics</h3>
-            <span>None for today</span>
+            <div id="other">
+                <h3>Other Topics</h3>
+                <span>None for today</span>
+            </div>
         </main>
         <hr>
         <footer>
-            <h3>Form</h3>
+            <h3 id="form">Form</h3>
             <form>
                 <fieldset>
                     <label for="title">Meeting Title: </label>
@@ -120,6 +140,14 @@
                     <button type="submit">Submit</button>
                 </fieldset>
             </form>
+            <div class="wrapper">
+                    <div class="one">Example</div>
+                    <div class="two">demonstrating</div>
+                    <div class="three">how</div>
+                    <div class="four">grids</div>
+                    <div class="five">work</div>
+                    <div class="six">in CSS!</div>
+                  </div>
         </footer>
     </body>
 </html>
